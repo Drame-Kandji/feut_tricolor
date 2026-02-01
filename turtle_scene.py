@@ -11,27 +11,27 @@ class TurtleScene:
     
     def __init__(self):
         self.screen = turtle.Screen()
-        self.screen.setup(1000, 800)
+        self.screen.setup(1200, 800)  # Largeur augmentée à 1200
         self.screen.title("Simulation de Circulation Urbaine - Ville de Thiès")
         self.screen.bgcolor("#f0f0f0")
         self.screen.tracer(0)
         
-        # Titre
+        # Titre - CENTRÉ ET TOUT EN HAUT
         title_turtle = turtle.Turtle()
         title_turtle.hideturtle()
         title_turtle.penup()
-        title_turtle.goto(-480, 350)
+        title_turtle.goto(0, 380)
         title_turtle.color("#2c3e50")
         title_turtle.write("Simulation de Circulation Urbaine - Ville de Thiès", 
-                          align="left", font=("Arial", 16, "bold"))
+                          align="center", font=("Arial", 16, "bold"))
         
         subtitle_turtle = turtle.Turtle()
         subtitle_turtle.hideturtle()
         subtitle_turtle.penup()
-        subtitle_turtle.goto(-480, 320)
+        subtitle_turtle.goto(0, 355)
         subtitle_turtle.color("#34495e")
         subtitle_turtle.write("Université Iba Der Thiam de Thiès - L3 Informatique", 
-                             align="left", font=("Arial", 12, "italic"))
+                             align="center", font=("Arial", 11, "italic"))
         
         self.drawer = turtle.Turtle()
         self.drawer.hideturtle()

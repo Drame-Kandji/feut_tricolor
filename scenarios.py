@@ -39,8 +39,8 @@ class CirculationNormale(Scenario):
             EtatFeu.VERT: 6,
             EtatFeu.ORANGE: 2
         }
-        self.nb_vehicules = 5
-        self.taux_apparition = 4.0
+        self.nb_vehicules = 8
+        self.taux_apparition = 3.5
         self.distance_securite = 40
     
     def apply_behavior(self, vehicle, etat_feu):
@@ -145,8 +145,8 @@ class HeureDePointe(Scenario):
             EtatFeu.VERT: 7,
             EtatFeu.ORANGE: 1
         }
-        self.nb_vehicules = 6
-        self.taux_apparition = 2.5
+        self.nb_vehicules = 10
+        self.taux_apparition = 2.0
         self.distance_securite = 30
     
     def apply_behavior(self, vehicle, etat_feu):
@@ -198,8 +198,8 @@ class ModeNuit(Scenario):
     def __init__(self):
         super().__init__("Mode nuit")
         self.durees_feu = {}
-        self.nb_vehicules = 3
-        self.taux_apparition = 8.0
+        self.nb_vehicules = 5
+        self.taux_apparition = 6.0
         self.distance_securite = 60
     
     def apply_behavior(self, vehicle, etat_feu):
